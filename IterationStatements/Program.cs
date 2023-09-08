@@ -12,23 +12,22 @@ namespace IterationStatements
 
             //-----START HERE------------------------------------------
            
-            int num = 0;
+            int myNumber = 0;
           
             do
             {
-                num++;
-                numbers.Add(num);
+                myNumber++;
+                numbers.Add(myNumber);
 
-            } while (num < 100);
+            } while (myNumber < 100);
 
-
-            do
+            while(myNumber < 200)
+           
             {
-                num++; 
-               
-                numbers.Add(num);    
+                myNumber++; 
+                numbers.Add(myNumber);    
      
-            } while (num < 100);
+            }
 
             Console.WriteLine("Increase:");
 
@@ -44,9 +43,9 @@ namespace IterationStatements
             Console.WriteLine("");
             Console.WriteLine("Decrease:");
            
-            for (var i = 199; i <= numbers.Count && i >= 0; i--)
+            for (int i = 199; i >= 0; i--)
             {
-                Console.WriteLine(numbers[i]); 
+                Console.WriteLine($"{numbers[i]}"); 
             }
 
             //------------End of exercise
